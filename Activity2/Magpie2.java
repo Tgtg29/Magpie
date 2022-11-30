@@ -54,6 +54,15 @@ public class Magpie2
 		else if (statement.trim() == ("") ){
 			response = "Say something, please.";
 		}
+		else if (statement.indexOf("funny") >= 0){
+			response = "Hahaha";
+		}
+		else if (statement.indexOf("video games") >= 0){
+			response = "What games do you play?";
+		}
+		else if (statement.indexOf("hello") >= 0){
+			response = "How are you today?";
+		}
 		else
 		{
 			response = getRandomResponse();
